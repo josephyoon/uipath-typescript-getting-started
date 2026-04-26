@@ -8,13 +8,17 @@ A hands-on walkthrough built with Claude Code showing how to go from zero to a d
 
 The best way to learn this isn't to read the guide — it's to build it yourself with Claude Code as your coding partner. This repo includes a `CLAUDE.md` file that automatically gives Claude the context it needs to guide you.
 
+**Time:** ~1.5–2.5 hours for all three parts. Each part can be done independently in 20–60 minutes.
+
 **Setup:**
 1. Install [Claude Code](https://claude.ai/code)
-2. Clone this repo somewhere as a reference: `git clone https://github.com/josephyoon/uipath-typescript-getting-started`
-3. Open a **new empty directory** in Claude Code — this is where you'll build your version
-4. Have your UiPath account ready (org name, tenant name, and a Personal Access Token)
+2. Clone this repo: `git clone https://github.com/josephyoon/uipath-typescript-getting-started`
+3. Open Claude Code **inside the cloned repo** — this is important, it's what loads `CLAUDE.md` automatically
+4. Have your UiPath account ready (org name and tenant from the URL, PAT token if you have one)
 
-**Starting prompt:**
+> **Why open inside the repo?** Claude Code automatically reads `CLAUDE.md` from the working directory. It contains all the SDK gotchas, the CORS proxy pattern, and the deploy pipeline — so Claude already knows the tricky parts before you hit them. You'll build your own versions in subdirectories alongside the reference examples.
+
+**Starting prompt — paste this into Claude Code:**
 
 > I want to learn how to use the `@uipath/uipath-typescript` SDK by building it from scratch. Start me with a Node.js hello world that connects to UiPath and lists my processes. My org is `{your-org}`, my tenant is `{your-tenant}`, and my environment is `{cloud/staging}`. I have a UiPath account but no PAT token yet — help me create one with the right scopes, then we'll write the code.
 
