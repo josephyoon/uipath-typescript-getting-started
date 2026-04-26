@@ -2,6 +2,28 @@
 
 A hands-on walkthrough built with Claude Code showing how to go from zero to a deployed UiPath Coded App using the `@uipath/uipath-typescript` SDK.
 
+---
+
+## Try It Yourself with Claude Code
+
+The best way to learn this isn't to read the guide — it's to build it yourself with Claude Code as your coding partner. This repo includes a `CLAUDE.md` file that automatically gives Claude the context it needs to guide you.
+
+**Setup:**
+1. Install [Claude Code](https://claude.ai/code)
+2. Clone this repo somewhere as a reference: `git clone https://github.com/josephyoon/uipath-typescript-getting-started`
+3. Open a **new empty directory** in Claude Code — this is where you'll build your version
+4. Have your UiPath account ready (org name, tenant name, and a Personal Access Token)
+
+**Starting prompt:**
+
+> I want to learn how to use the `@uipath/uipath-typescript` SDK by building it from scratch. Start me with a Node.js hello world that connects to UiPath and lists my processes. My org is `{your-org}`, my tenant is `{your-tenant}`, and my environment is `{cloud/staging}`. I have a UiPath account but no PAT token yet — help me create one with the right scopes, then we'll write the code.
+
+Claude will guide you through each step, help you debug errors as they come up, and explain what's happening along the way. Once the Node script works, ask to move on to the React UI, then the Coded App.
+
+**The finished examples in this repo are reference implementations** — look at them when you're stuck, but try building each piece yourself first.
+
+---
+
 ## What You'll Build
 
 | Project | What it is |
